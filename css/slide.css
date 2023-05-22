@@ -1,0 +1,79 @@
+
+.tranding-slide {
+      width: 37rem;
+      height: max-content;
+      padding-bottom: 3.7vw;
+      position: relative;
+    }
+    
+    @media (max-width:500px) {
+      .tranding-slide {
+        width: 28rem !important;
+        height: 36rem !important;
+      }
+      .tranding-slide .tranding-slide-img img {
+        width: 28rem !important;
+        height: 36rem !important;
+      }
+    }
+    
+    .tranding-slider .swiper-slide .tranding-slide-img img {
+      width: 100%;
+        filter: blur(2px) !important;
+        border-radius: .4vw !important;
+      /* height: 42rem;
+      border-radius: 2rem;
+      object-fit: cover; */
+    }
+    .tranding-slider .swiper-slide-active .tranding-slide-img img{
+        filter: blur(0) !important;
+    }
+    .swiper-button-next-product, .swiper-button-prev-product {
+        position: absolute;
+        top: 96% !important;
+        width:max-content !important;
+        height: var(--swiper-navigation-size);
+        margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--swiper-navigation-color,var(--swiper-theme-color));
+    }
+    .swiper-button-next-product:after  {
+        width: 5vw !important;
+        height: 5vw !important;
+        content: '' !important;
+        background-image: url('https://api.iconify.design/material-symbols/chevron-right-rounded.svg') !important;
+        background-size: contain !important;
+        background-repeat: no-repeat;
+    }
+    .swiper-button-prev-product:after{
+        width: 5vw !important;
+        height: 5vw !important;
+        content: '' !important;
+        background-size: contain !important;
+        background-repeat: no-repeat;
+        background-image: url('https://api.iconify.design/material-symbols/chevron-left-rounded.svg') !important;
+    }
+    .swiper-button-next-product:after, .swiper-button-prev-product:after {
+        font-family: none !important;
+        font-size: var(--swiper-navigation-size);
+        text-transform: none!important;
+        letter-spacing: 0;
+        font-variant: initial;
+        line-height: 1;
+    }
+    .swiper-button-next-product {
+        right: 38% !important;
+        left: auto;
+    }
+    .swiper-button-prev-product {
+        left: 38% !important;
+        right: auto;
+    }
+    .container-slide{
+        width: 53%;
+        margin: auto;
+    }

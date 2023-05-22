@@ -1,0 +1,1061 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+@font-face {
+    font-family: futura-medium;
+    src: url(../font/futura/FutuBk.ttf);
+}
+@font-face {
+    font-family: futura-bold;
+    src: url(../font/futura-heading/FuturaLTPaneuropeanHeavy.ttf);
+}
+@font-face {
+    font-family: futura-heading;
+    src: url(../font/futura-heading/FuturaLTPaneuropeanBold.ttf);
+}
+
+.navbar-top{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: .9vw 2.6vw;
+    padding-left: 1vw;
+    padding-right: 3.5vw;
+}
+.logo-navbar img{
+    max-width: 3.7vw;
+}
+.navbar-top ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.navbar-top ul li{
+    list-style: none;
+    padding: 0 2.2vw;
+    border-right: .2vw solid #070909;
+    font-family: futura-medium;
+}
+.navbar-top ul li a{
+    text-decoration: none;
+    color: #070909;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.navbar-top ul li:last-child{
+    border-right: none;
+    padding-right: 0;
+}
+
+.navbar-menu{
+    background: #070909;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1.5vw 1.4vw;
+    padding-left: 4vw;
+}
+.navbar-menu ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: max-content;
+    padding: 0 2.2vw;
+}
+.navbar-menu ul li{
+    font-size: 2vw;
+    font-family: futura-medium;
+    color: white;
+    padding:.8vw 3vw;
+}
+.search-box{
+    background: #5A5958;
+    width: 17%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    padding: .9vw 1vw;
+    border-radius: 20vw;
+    position: relative;
+    overflow: hidden;
+    margin: 0 2.6vw;
+    margin-right: 3vw;
+    margin-left: 4vw;
+}
+.search-box input{
+    background: transparent;
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: futura-medium;
+    letter-spacing: .1vw;
+    font-size: 1.5vw;
+    outline: none;
+    width: 100%;
+    padding-left: 1.5vw;
+    z-index: 5;
+}
+.search-box input::placeholder{
+    color: #a7a4a3;
+    padding-right: 1.2vw;
+}
+.search-box::before{
+    content: '';
+    width: 91%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 92%;
+    background: #716E70;
+    border-radius: 20vw;
+}
+.search-box::after{
+    content: '';
+    width: 94%;
+    position: absolute;
+    left: 44%;
+    transform: translateX(-50%);
+    bottom: -4%;
+    height: 85%;
+    background: #5A5958;
+    border-radius: 20vw;
+}
+.search-box ion-icon{
+    color: white;
+    position: absolute;
+    left: 5%;
+    font-size: 2.3vw;
+    top: 50%;
+    z-index: 5;
+    transform: translateY(-50%);
+}
+
+.like-button{
+    margin: 0 2.1vw;
+}
+.like-button ion-icon{
+    color: white;
+    font-size: 4.1vw;
+    cursor: pointer;
+}
+
+.cart-button{
+    margin: 0 2vw;
+}
+.cart-button ion-icon{
+    color: white;
+    font-size: 4.1vw;
+    cursor: pointer;
+}
+
+.slide-show-banner{
+    position: relative;
+}
+.heading-banner{
+   text-align: center;
+   padding: 5vw 0;
+   position: relative;
+}
+.hamburger-banner{
+    position: absolute;
+    left: 2%;
+    top: 16%;
+    width: 3vw;
+}
+.heading-banner h1{
+    font-size: 2.2vw;
+    text-transform: uppercase;
+    font-family: futura-heading;
+    margin-bottom: .1vw;
+    color: #040707;
+}
+.heading-banner p{
+    font-size: 1.6vw;
+    font-family: futura-medium;
+    font-weight: 600;
+    color: #040707;
+    letter-spacing: .16vw;
+}
+.swiper-slide{
+    width: 100%;
+    
+}
+.swiper-slide img{
+    width: 100%;
+}
+.btn-shop{
+    font-size: 1.9vw;
+    font-family: futura-medium;
+    border: none;
+    background: #1A1C1D;
+    color: white;
+    padding: .56vw 3.6vw;
+    border-radius: 20vw;
+    margin: 4vw auto;
+    width: max-content;
+    display: block;
+}
+.circle{
+    position: absolute;
+    bottom:8%;
+    right: 1.5%;
+    width: 2.3vw;
+}
+
+.video{
+    width: 100%;
+}
+.video video{
+    width: 100%;
+}
+
+.category-section{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    padding: 0 4vw;
+    padding-bottom: 6vw;
+}
+.category-section h1{
+    font-family: futura-medium;
+    font-size: 2.2vw;
+    letter-spacing: .2vw;
+    margin: 4.7vw 0;
+}
+.category-section b{
+    font-family: futura-bold;
+}
+.category-layout-homepage{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4vw;
+}
+.category-box img{
+    width: 100%;
+}
+
+.popular-section{
+    text-align: start;
+    width: 100%;
+    height: max-content;
+    padding: 0 4vw;
+}
+.popular-section h1{
+    font-size: 2.2vw;
+    font-family: futura-medium;
+    letter-spacing: .2vw;
+    margin-bottom: 3vw;
+}
+.popular-section b{
+    font-family: futura-bold;
+}
+.wrapper-popular{
+    margin-bottom: 11vw !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 87% !important;
+    width:max-content !important;
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+}
+.swiper-button-next-arrival, .swiper-button-prev-arrival {
+    position: absolute;
+    top: 92% !important;
+    width:max-content !important;
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+}
+.swiper-button-next:after  {
+    width: 5vw !important;
+    height: 5vw !important;
+    content: '' !important;
+    background-image: url('https://api.iconify.design/material-symbols/chevron-right-rounded.svg') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
+.swiper-button-prev:after{
+    width: 5vw !important;
+    height: 5vw !important;
+    content: '' !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-image: url('https://api.iconify.design/material-symbols/chevron-left-rounded.svg') !important;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-family: none !important;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none!important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+.swiper-button-next-arrival:after  {
+    width: 5vw !important;
+    height: 5vw !important;
+    content: '' !important;
+    background-image: url('https://api.iconify.design/material-symbols/chevron-right-rounded.svg') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
+.swiper-button-prev-arrival:after{
+    width: 5vw !important;
+    height: 5vw !important;
+    content: '' !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-image: url('https://api.iconify.design/material-symbols/chevron-left-rounded.svg') !important;
+}
+.swiper-button-next-arrival:after, .swiper-button-prev-arrival:after {
+    font-family: none !important;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none!important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+.swiper-button-next {
+    right: 43% !important;
+    left: auto;
+}
+.swiper-button-prev {
+    left: 43% !important;
+    right: auto;
+}
+.swiper-button-next-arrival {
+    right: 43% !important;
+    left: auto;
+}
+.swiper-button-prev-arrival {
+    left: 43% !important;
+    right: auto;
+}
+
+.product-popular-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-content: space-between;
+}
+.product-popular img{
+  width: 100%;
+}
+.product-popular-desc{
+    display: flex;
+    gap: .1vw;
+    flex-direction: column;
+}
+.product-popular-desc span{
+    font-family: futura-medium;
+    font-size: 1vw;
+}
+.product-popular-price{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.product-popular-price span{
+    font-family: futura-medium;
+    color: #8d8d8d;
+    font-size: .9vw;
+    text-decoration: line-through;
+}
+.product-popular-price h5{
+    font-size: 1vw;
+    font-family: futura-medium;
+}
+
+.new-arrival{
+    width: 100%;
+    padding: 0 4vw;
+    height: max-content;
+    padding-top: 1vw;
+}
+.heading-new-arrival{
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 3.7vw;
+}
+.heading-new-arrival span{
+    font-family: futura-medium;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+.heading-new-arrival h1{
+    text-transform: uppercase;
+    font-family: futura-heading;
+    font-size: 3.7vw;
+}
+.wrapper-arrival{
+    margin-bottom: 10vw !important;
+}
+
+.footer-layout{
+    background: black;
+    width: 100%;
+    padding: 3vw 3vw;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 37% 63%;
+}
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-menu ul li{
+    list-style: none;
+    font-size: 1vw;
+    color: white;
+    font-family: futura-medium;
+    margin-bottom: 1.5vw;
+    color: #717272;
+}
+.footer-menu ul li h4{
+    text-transform: uppercase;
+    color: white;
+}
+.footer-menu ul:nth-child(1) li{
+    text-transform: uppercase;
+    font-weight: 600;
+    color:white;
+}
+
+.social-media-footer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2.1vw;
+    margin-top: .2vw;
+}
+.social-media-footer a{
+    width: 3.6vw;
+    height: 3.6vw;
+    position: relative;
+    background: white;
+    border-radius: 20vw;
+}
+.social-media-footer a ion-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2.2vw;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.footer-menu-second{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.7vw;
+}
+.copyright span{
+    color: #717272;
+    font-family: futura-medium;
+    font-size: 1vw;
+}
+.copyright b{
+    color: white;
+}
+.footer-menu-second-list ul{
+    display: flex;
+    list-style: none;
+    gap: 3vw;
+    justify-content: flex-end;
+}
+.footer-menu-second-list ul li{
+    font-family: futura-medium;
+    color: #717272;
+    font-size: 1vw;
+}
+
+
+  .catalog{
+    display:grid;
+    grid-template-columns:19% 81%;
+    padding:.2vw 3.8vw;
+    margin-top: .5vw;
+  }
+  .box-category-layout{
+    border:.14vw solid #F1F0F9;
+    border-radius:1vw;
+    padding:1vw;
+    padding-bottom:3.7vw;
+  }
+  .heading-box-category-layout{
+    background:#070909;
+    color:white; 
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:1vw 1.1vw;
+    border-radius:.5vw;
+    margin-bottom:1.5vw;
+  }
+  .heading-box-category-layout h5{
+    font-family:futura-medium;
+    font-size:1.3vw;
+    font-weight:500;
+  }
+  .heading-box-category-layout span{
+    font-size:1.3vw;
+  }
+  .accordion-layout{
+    padding: 0 .7vw;
+  }
+  .accordion {
+    color: #0f0f0f;
+    cursor: pointer;
+    width: 100%;
+    background: transparent;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.3vw;
+    font-family: futura-medium;
+    font-weight: 500;
+    transition: 0.4s;
+    padding: .3vw 0;
+  }
+  .accordion-category-list{
+    display: flex;
+    justify-content: space-between;
+    margin: .46vw 0;
+  }
+  .accordion-category-list span{
+    font-size: 1.3vw;
+  }
+  /* .activeAcc, .accordion:hover {
+    background-color: #ccc;
+  } */
+  .accordion:after {
+    content: url('https://api.iconify.design/tabler/chevron-up.svg');
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  .activeAcc:after {
+    content: url('https://api.iconify.design/tabler/chevron-up.svg');
+    transform: rotate(180deg);
+}
+  .panel {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: futura-medium;
+  }
+  .panel p{
+    font-family: futura-medium;
+    font-size: 1.1vw;
+  }
+
+  .catalog-layout{
+    padding:.2vw 2vw;
+    padding-bottom:6vw;
+  }
+  .catalog-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    font-family:futura-medium;
+  }
+  .catalog-top span{
+    font-size:1.3vw;
+  }
+  .sort-catalog{
+    display:flex;
+    align-items:center;
+    gap:1vw;
+  }
+  .sort-catalog-select{
+    position:relative;
+    
+  }
+  .sort-catalog-select select{
+    font-size:1.3vw ;
+    font-family:futura-medium;
+    outline:none;
+    border:none;
+    text-transform:none;
+    padding:.4vw .8vw;
+    border:.14vw solid #F1F0F9;
+    appearance:none !important;
+    position:relative;
+    width:7.7vw;
+    border-radius:.4vw;
+  }
+
+  .sort-catalog-select:after {
+    top: 55%;
+    right: 10%;
+    border: solid transparent;
+    content: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" viewBox="0 0 512 512"%3E%3Cpath fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="m112 184l144 144l144-144"%2F%3E%3C%2Fsvg%3E');
+    height: 1.2vw;
+    width: 1.2vw;
+    position: absolute;
+    pointer-events: none;
+    transform:translateY(-50%);
+    z-index: 100;
+  }
+  .catalog-product{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap:3vw;
+    margin-top:1.3vw;
+  }
+  .catalog-product-image img{
+    width:100%;
+  }
+  .catalog-product-content{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    justify-content: space-between;
+    margin-top:.5vw;
+  }
+  .catalog-product-desc{
+    display: flex;
+    gap: .1vw;
+    flex-direction: column;
+  }
+  .catalog-product-desc span:first-child{
+    color: black;
+  }
+  .catalog-product-desc span{
+    font-family: futura-medium;
+    font-size: 1vw;
+    color: #8d8d8d;
+  }
+  .catalog-product-price{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .catalog-product-price span{
+    font-family: futura-medium;
+    color: #8d8d8d;
+    font-size: .9vw;
+    text-decoration: line-through;
+  }
+  .catalog-product-price h5{
+    font-size: 1vw;
+    font-family: futura-medium;
+  }
+
+  .breadcrumbs{
+    display: flex;
+    align-items: center;
+    padding: .8vw 4vw;
+    padding-top: 1.6vw;
+    gap: .7vw;
+  }
+  .breadcrumbs a{
+    color: black;
+    font-family: futura-medium;
+    font-size: 1vw;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(.4vw);
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: .3vw;
+    align-items: center;
+    padding: 3vw 0;
+    animation: popupAnimation .4s ease-in-out;
+  }
+  @keyframes popupAnimation {
+    0%{
+      transform: translate(-50%, 150%);
+    }
+    100%{
+      transform: translate(-50%, -50%);
+    }
+  }
+  /* .popup-chart-img{
+    width: 100%;
+  } */
+  .popup-chart-img img{
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 1vw;
+    border-radius: .6vw;
+  }
+  .popup-content button{
+    position: absolute;
+    right: 2%;
+    background: transparent;
+    color: white;
+    border: none;
+    top: 2%;
+    cursor: pointer;
+  }
+  .popup-content button ion-icon{
+    font-size: 2.7vw;
+  }
+  .popup-chart-content{
+    padding-top: .7vw;
+  }
+  .popup-chart-content p{
+    color: white;
+    font-family: futura-medium;
+    font-size: 1vw;
+    width: 74%;
+    margin-bottom: .6vw;
+    font-weight: 500;
+    margin: auto;
+    text-align: center;
+  }
+  /* .popup-chart-content ul li{
+    font-size: 1vw;
+    list-style: none;
+    font-family: futura-medium;
+    color: white;
+  } */
+  
+  /* .popup-content-guide{
+    width:55%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:black;
+    flex-direction:column;
+    margin:auto;
+    padding:1.7vw 0;
+    border-radius:1vw;
+  }
+  .popup-content table, tr, td{
+    border:.12vw solid white;
+    border-collapse:collapse;
+    color:white;
+    font-family:futura-medium;
+    text-align:center;
+    padding:1vw 1.5vw;
+    font-size:1.1vw;
+  }
+  .popup-content img{
+    width:70%;
+  }
+  .btn-guide{
+    position:absolute;
+    right:18%;
+    top:0;
+    background:transparent;
+    border:none;
+    outline:none;
+    cursor:pointer;
+  }
+  .btn-guide span{
+    color:white;
+    font-size:3vw;
+  } */
+  .qty-layout button.active{
+    border:.12vw solid black;
+  }
+  /* .App{
+      width:100%;
+      position:relative;
+  }
+  .wrapper-product{
+      width:64%;
+      padding-bottom:4vw;
+  }
+  .swiper-slide img{
+      width:100%;
+      filter:blur(2px);
+      transition:1s all;
+      border-radius:.7vw;
+  }
+  .swiper-slide-active img{
+      filter:blur(0);
+  }
+  .wrapper-product .swiper-button-next, .wrapper-product .swiper-button-prev {
+    position: absolute;
+    top: 94.4% !important;
+    width:max-content !important;
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+  }
+  .wrapper-product .swiper-button-next:after  {
+    width: 4vw !important;
+    height: 4vw !important;
+    content: '' !important;
+    background-image: url('https://api.iconify.design/material-symbols/chevron-right-rounded.svg') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+  }
+  .wrapper-product .swiper-button-prev:after{
+    width: 4vw !important;
+    height: 4vw !important;
+    content: '' !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-image: url('https://api.iconify.design/material-symbols/chevron-left-rounded.svg') !important;
+  }
+  .wrapper-product .swiper-button-next {
+    right: 44% !important;
+    left: auto;
+  }
+  .wrapper-product .swiper-button-prev {
+    left: 44% !important;
+    right: auto;
+  } */
+  .product-page{
+    padding: 3vw 0;
+    padding-top: 4vw;
+    padding-bottom: 1vw;
+  }
+  .product-box{
+    margin-top: 2vw;
+  }
+  .product-box-category{
+    text-align:center;
+    font-family:futura-medium;
+  }
+  .product-box-category span{
+    color:#909391;
+    font-size:1.2vw;
+  }
+  .product-box-category b{
+    color:#070909;
+  }
+  .product-box-name{
+    text-align:center;
+    font-family:futura-bold;
+  }
+  .product-box-name h1{
+    font-size:3.2vw;
+    text-transform:uppercase;
+  }
+  .product-box-spesification{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    justify-content:center;
+    justify-items:center;
+    width:28%;
+    margin:1vw auto;
+    margin-bottom:1.4vw;
+  }
+  .spesification-icon{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    gap:.4vw;
+  }
+  .spesification-icon-image{
+    width:4.7vw;
+    height:4.7vw;
+    position:relative;
+    border:.11vw solid black;
+    border-radius:20vw;
+  }
+  .spesification-icon-image img{
+    width:2.5vw;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  .spesification-icon span{
+    font-family:futura-medium;
+    font-size:.85vw;
+  }
+  .product-box-price{
+    text-align:center;
+    padding:1.4vw 0;
+    font-family:futura-medium;
+    border-top:.11vw solid #F1F0F9;
+    border-bottom:.11vw solid #F1F0F9;
+    width:34%;
+    margin:auto;
+  }
+  .product-box-price h5{
+    font-size:1.4vw;
+  }
+  .product-box-price span{
+    text-decoration:line-through;
+    font-size:1.3vw;
+    color:#8d8d8d;
+    font-weight:500;
+  }
+
+  .product-box-action{
+    display:flex;
+    font-family:futura-medium;
+    width:max-content;
+    margin:auto;
+    margin-top:2vw;
+  }
+  .qty-box{
+    border-right:.12vw solid #F1F0F9;
+    padding-right:2.3vw;
+  }
+  .qty-box span{
+    font-size:1.3vw; 
+    color:#909391;
+  }
+  .qty-layout{
+    display:flex;
+    gap:.9vw;
+    align-items:center;
+    margin-top:1vw;
+  }
+  .qty-layout button{
+    font-size:1.3vw;
+    background:transparent;
+    outline:none;
+    border:.12vw solid #F1F0F9;
+    width:2.9vw;
+    height:2.9vw;
+    font-family:futura-medium;
+  }
+  #size-button{
+    display: flex;
+    gap: .9vw;
+  }
+  .qty-layout .size-guide{
+    width:max-content;
+    border:none;
+    font-size:1vw;
+    color:#909391;
+    font-weight:500;
+    cursor:pointer;
+  }
+  .qty-layout p{
+    background:black;
+    color:white;
+    width:2.9vw;
+    height:3vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.1vw;
+  }
+  .size-select{
+    padding-left:2.3vw;
+  }
+  .size-select span{
+    font-size:1.3vw;
+    color:#909391;
+  }
+
+  .product-box-btn{
+    display:flex;
+    align-items:center;
+    gap:1vw;
+    width:max-content;
+    margin:2.6vw auto;
+  }
+  .product-box-btn button{
+    background:#070909;
+    color:white;
+    border-radius:20vw;
+    font-family:futura-medium;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:.5vw;
+    cursor:pointer;
+  }
+  .product-box-btn button.add-to-cart-product{
+    font-size:1.2vw;
+    padding:.9vw 1.6vw;
+  }
+  .add-to-cart-product ion-icon{
+    font-size: 1.7vw;
+  }
+  .product-box-btn button.add-to-wishlist-product{
+    font-size:1.1vw;
+    padding:.9vw;
+  }
+  .add-to-wishlist-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-box-btn ion-icon{
+    font-size:1.7vw;
+    text-align: center;
+  }
+  .product-box-desc{
+    font-family:futura-medium;
+    width:40%;
+    margin:auto;
+    margin-top:1vw;
+    text-align:center;
+  }
+  .product-box-desc h3{
+    font-size:1.3vw;
+    margin-bottom:.5vw;
+  }
+  .product-box-desc p{
+    font-size:1vw;
+    padding:0 3vw;
+  }
+
+  .related-product-layout{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    padding:5vw 4vw;
+    padding-top:1vw;
+    grid-gap:2vw;
+  }
+  .related-product-layout a{
+    color: black !important;
+  }
+  .heading-related-product{
+    text-align:center;
+    margin-bottom:1.8vw;
+    margin-top:4vw;
+    border-top:.12vw solid #F1F0F9;
+    padding-top:3vw;
+    margin-right:6vw;
+    margin-left:6vw;
+  }
+  .heading-related-product h1{
+    font-family:futura-medium;
+    font-size:1.8vw;
+  }
