@@ -112,22 +112,24 @@
             </div>
           </div>
           <div class='catalog-product'>
-            <div class='catalog-product-box'>
-              <div class='catalog-product-image'>
-                <img src='image/jacket-4.jpg'/>
-              </div>
-              <div class='catalog-product-content'>
-                <div class='catalog-product-desc'>
-                  <span><b>Fusion Series</b></span>
-                  <span>Oversized Tees Obeylix White</span>
-                  <span>Tees Collections</span>
+            <a href="product.php">
+              <div class='catalog-product-box'>
+                <div class='catalog-product-image'>
+                  <img src='image/jacket-4.jpg'/>
                 </div>
-                <div class='catalog-product-price'>
-                  <span>190.000</span>
-                  <h5>99.000</h5>
+                <div class='catalog-product-content'>
+                  <div class='catalog-product-desc'>
+                    <span><b>Fusion Series</b></span>
+                    <span>Oversized Tees Obeylix White</span>
+                    <span>Tees Collections</span>
+                  </div>
+                  <div class='catalog-product-price'>
+                    <span>190.000</span>
+                    <h5>99.000</h5>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
             <div class='catalog-product-box'>
               <div class='catalog-product-image'>
                 <img src='image/jacket-2.jpg'/>

@@ -92,9 +92,9 @@
         <div class='qty-box'>
             <span>Quantity :</span>
             <div class='qty-layout'>
-            <button onclick="decreaseQty()">-</button>
-            <p id="qty">1</p>
-            <button onclick="increaseQty()">+</button>
+                <button onclick="decreaseQty()">-</button>
+                <p id="qty">1</p>
+                <button onclick="increaseQty()">+</button>
             </div>
         </div>
         <div class='size-select'>
@@ -111,9 +111,11 @@
         </div>
         </div>
         <div class='product-box-btn'>
-            <button class='add-to-cart-product'>
-                <ion-icon name="bag-handle-outline"></ion-icon>Add to Cart
-            </button>
+            <a href="cart.php">
+                <button class='add-to-cart-product'>
+                    <ion-icon name="bag-handle-outline"></ion-icon>Add to Cart
+                </button>
+            </a>
             <button class='add-to-wishlist-product'>
                 <ion-icon name="heart-outline"></ion-icon>
             </button>

@@ -11,6 +11,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/style.scss">
 </head>
 <body>
 <div class="navbar-top">
@@ -26,19 +27,24 @@
 </div>
 <div class="navbar-menu">
     <ul>
-        <a href="#"><li>New Arrivals</li></a>
+        <a href="new-arrivals.php"><li>New Arrivals</li></a>
         <a href="#"><li>Tees</li></a>
         <a href="#"><li>Jackets</li></a>
         <a href="#"><li>Pants</li></a>
+        <a href="#"><li>Accessories</li></a>
     </ul>
     <div class="search-box">
         <ion-icon name="search"></ion-icon>
         <input type="text" placeholder="Search">
     </div>
     <div class="like-button">
-        <ion-icon name="heart-outline"></ion-icon>
+        <a href="wishlist.php">
+            <ion-icon name="heart-outline"></ion-icon>
+        </a>
     </div>
     <div class="cart-button">
-        <ion-icon name="bag-handle-outline"></ion-icon>
+        <a href="cart.php">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+        </a>
     </div>
 </div>

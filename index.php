@@ -34,7 +34,6 @@
         </div>
     </div>
     <a href="#"><button class="btn-shop">Shop</button></a>
-    <img src="image/circle.svg" alt="" class="circle">
 </div>
 
 <div class="video">
