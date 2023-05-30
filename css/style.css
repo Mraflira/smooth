@@ -183,7 +183,9 @@
 }
 .swiper-slide{
     width: 100%;
-    
+}
+.slide-img-login img{
+  width: 5vw;
 }
 .swiper-slide img{
     width: 100%;
@@ -403,6 +405,70 @@
     font-family: futura-heading;
     font-size: 3.7vw;
 }
+
+.pilih-category {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.2vw;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.pilih-category input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-category {
+  position: absolute;
+  top: 52%;
+  transform: translateY(-50%);
+  right: 0;
+  height: 1vw;
+  width: 1vw;
+  background-color: transparent;
+  border: .12vw solid #070909;
+}
+
+/* When the checkbox is checked, add a blue background */
+.pilih-category input:checked ~ .checkmark-category {
+  background-color: transparent;
+}
+
+/* Create the checkmark-category/indicator (hidden when not checked) */
+.checkmark-category:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark-category when checked */
+.pilih-category input:checked ~ .checkmark-category:after {
+  display: block;
+}
+
+/* Style the checkmark-category/indicator */
+.pilih-category .checkmark-category:after {
+  left: .23vw;
+  top: .01vw;
+  width: .25vw;
+  height: .5vw;
+  border: solid rgb(19, 19, 19);
+  border-width: 0 .12vw .12vw 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 .wrapper-arrival{
     margin-bottom: 10vw !important;
 }
@@ -543,9 +609,6 @@
   .accordion-category-list span{
     font-size: 1.3vw;
   }
-  /* .activeAcc, .accordion:hover {
-    background-color: #ccc;
-  } */
   .accordion:after {
     content: url('https://api.iconify.design/tabler/chevron-up.svg');
     color: #777;
@@ -568,6 +631,36 @@
     font-family: futura-medium;
     font-size: 1.1vw;
   }
+
+  /* .accordion-item {
+    margin-bottom: 1vw;
+  }
+  
+  .accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .accordion-header ion-icon {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .rotate {
+    transform: rotate(180deg);
+  }
+  
+  .accordion-content {
+    display: none;
+    margin: 1vw 0;
+  } */
+  
+  /* .sub-accordion {
+    margin-left: 20px;
+  } */
+  
 
   .catalog-layout{
     padding:.2vw 2vw;
@@ -867,7 +960,7 @@
     font-family:futura-bold;
   }
   .product-box-name h1{
-    font-size:3.2vw;
+    font-size:3.4vw;
     text-transform:uppercase;
   }
   .product-box-spesification{
@@ -1351,3 +1444,590 @@
   .wishlist .cart-product-layout{
     width: 100%;
   }
+  .swiperLogin{
+    width: 100%;
+  }
+  .swiper-slide{
+    width: 100%;
+  }
+
+  .swiper-slide img{
+    width: 100% !important;
+  }
+
+  .login-page{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    box-sizing: border-box;
+    grid-gap: 5vw;
+    width: 100%;
+    padding: 7vw 15vw;
+    font-family: futura-medium;
+  }
+  .form-login h2{
+    font-family: futura-medium;
+    font-size: 2.3vw;
+    margin-bottom: .6vw;
+  }
+  .form-login p{
+    font-size: 1.2vw;
+    font-family: futura-medium;
+    margin-bottom: 1.2vw;
+  }
+  .form-input-box{
+    width: 80%;
+  }
+  .form-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1vw;
+    gap: .5vw;
+  }
+  .form-input label{
+    font-size: 1.2vw;
+  }
+  .form-input input{
+    width: 100%;
+    background: transparent;
+    border: .12vw solid #0f0f0f;
+    outline: none;
+    font-size: 1.2vw;
+    font-family: futura-medium;
+    padding: .6vw .8vw;
+  }
+  .form-input textarea{
+    width: 100%;
+    background: transparent;
+    border:.12vw solid #0f0f0f;
+    outline: none;
+    font-size: 1.2vw;
+    font-family: futura-medium;
+    padding: .6vw .8vw;
+  }
+  .space-between{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5vw;
+  }
+  /* The container */
+.remind {
+  display: block;
+  position: relative;
+  padding-left: 1.7vw;
+  cursor: pointer;
+  font-size: 1.2vw;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.remind input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.3vw;
+  width: 1.3vw;
+  background-color: transparent;
+  border: .12vw solid #070909;
+}
+
+/* When the checkbox is checked, add a blue background */
+.remind input:checked ~ .checkmark {
+  background-color: transparent;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.remind input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.remind .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid rgb(19, 19, 19);
+  border-width: 0 .12vw .12vw 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+  
+  .forgot-password a{
+    font-size: 1.2vw;
+    color: black;
+  }
+  .form-button{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .9vw;
+  }
+  .form-button button{
+    width: 100%;
+    background: #070909;
+    color: white;
+    font-size: 1.2vw;
+    font-family: futura-medium;
+    padding: .6vw;
+    border:.12vw solid transparent;
+    cursor: pointer;
+  }
+  .account-google-text{
+    text-align: center;
+    font-size: 1vw;
+    margin: 1.9vw auto;
+  }
+  .account-google-text span{
+    color: #cdc9d3;
+  }
+  .register-btn{
+    background: transparent !important;
+    border: .12vw solid #0f0f0f !important;
+    color: #070909 !important;
+  }
+
+  .button-account-google{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4vw;
+    border: .12vw solid #efedf3;
+    padding: 1.1vw;
+    cursor: pointer;
+  }
+  .button-account-google img{
+    width: 1.2vw;
+  }
+  .button-account-google span{
+    font-size: 1.2vw;
+  }
+
+  /* .form-login-slide{
+    position: relative;
+    width: 100%;
+    height: 4vw;
+    background: rebeccapurple;
+  } */
+  .form-login-slide img{
+    width: 5vw;
+  }
+
+  .swiper-slide-login{
+    background-image: url(../image/finest.jpg) !important;
+    background-position: center !important;
+    background-size: cover !important;
+    width: 100% !important;
+    height: 38vw !important;
+  }
+  .swiper-slide-login-2{
+    background-image: url(../image/futurist.jpg) !important;
+    background-position: center !important;
+    background-size: cover !important;
+    width: 100% !important;
+    height: 38vw !important;
+  }
+  .swiper-slide-login-3{
+    background-image: url(../image/vintage.jpg) !important;
+    background-position: center !important;
+    background-size: cover !important;
+    width: 100% !important;
+    height: 38vw !important;
+  }
+
+
+  .checkout{
+    width: 100%;
+    padding: 5vw 16vw;
+    font-family: futura-medium;
+  }
+  .heading-checkout{
+    text-transform: uppercase;
+    font-family: futura-heading;
+    padding-bottom: .3vw;
+    border-bottom: .12vw solid #efedf3;
+    margin-bottom: 1.4vw;
+  }
+  .heading-checkout h1{
+    font-size: 3vw;
+  }
+  .form-checkout-layout{
+    display: grid;
+    grid-template-columns: 52% 48%;
+  }
+  .form-checkout-contact{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-right: 4vw;
+  }
+  .form-input-column{
+    display: grid;
+    grid-template-columns: 60.8% 35%;
+    grid-column-gap: 1.4vw;
+  }
+  .btn-back{
+    display: flex;
+    align-items: center;
+    font-size: 1.2vw;
+    color: #0f0f0f;
+  }
+  .button-to-shipping{
+    width: max-content;
+    background: #070909;
+    color: white;
+    font-size: 1.2vw;
+    font-family: futura-medium;
+    padding: .6vw;
+    border:.12vw solid transparent;
+    cursor: pointer;
+  }
+  .button-to-shipping a{
+    color: white;
+  }
+
+  .product-checkout{
+    display: grid;
+    grid-template-columns: 20% 53% 27%;
+    align-items: center;
+    width: 100%;
+    padding-top: .9vw;
+    padding-bottom: .8vw;
+    border-bottom: .12vw solid #efedf3;
+  }
+  .content-product-checkout{
+    padding: .9vw;
+  }
+  .content-product-checkout h3{
+    font-size: 1.2vw;
+    margin-bottom: .4vw;
+     overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 100%;
+  }
+  .content-product-checkout span{
+    font-size: 1.1vw;
+  }
+  .image-product-checkout img{
+    width: 100%;
+  }
+  .price-product-checkout{
+    padding: .9vw .4vw;
+    padding-top: .3vw;
+    text-align: end;
+    padding-right: 0;
+  }
+  .price-product-checkout span{
+    font-size: 1.1vw;
+  }
+
+  .checkout-sidebar-total{
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .shipping-input-layout{
+    padding-right: 4vw;
+  }
+  .shipping-input-box{
+    margin-bottom: 1.4vw;
+  }
+  .shipping-input-box label{
+    font-size: 1.4vw;
+  }
+  .output-contact span{
+    font-size: 1.2vw;
+  }
+  .output-contact{
+    border: .12vw solid #0f0f0f;
+    display: flex;
+    justify-content: space-between;
+    padding: .6vw .8vw;
+    align-items: center;
+    gap: 2vw;
+  }
+  .output-contact a{
+    font-size: 1.2vw;
+    color: #070909;
+  }
+  /* .wrapper{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    height:max-content;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .wrapper .option{
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    cursor: pointer;
+    border: .12vw solid #070909;
+    transition: all 0.3s ease;
+  }
+  .wrapper .option .dot{
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+  }
+  .wrapper .option .dot::before{
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #0069d9;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  #option-1:checked:checked ~ .option-1,
+  #option-2:checked:checked ~ .option-2{
+    border-color: #0069d9;
+    background: #0069d9;
+  }
+  #option-1:checked:checked ~ .option-1 .dot,
+  #option-2:checked:checked ~ .option-2 .dot{
+    background: #fff;
+  }
+  #option-1:checked:checked ~ .option-1 .dot::before,
+  #option-2:checked:checked ~ .option-2 .dot::before{
+    opacity: 1;
+    transform: scale(1);
+  }
+  .wrapper .option span{
+    font-size: 20px;
+    color: #808080;
+  }
+  #option-1:checked:checked ~ .option-1 span,
+  #option-2:checked:checked ~ .option-2 span{
+    color: #fff;
+  } */
+
+  .shipping-select-layout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.3vw;
+    margin-top: .7vw;
+    margin-bottom: 1.3vw;
+  }
+  
+  .shipping-radio {
+    display: flex;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+  }
+    .shipping-radio input{
+      position: absolute;
+      left: -9999px;
+    }
+    .shipping-radio input:checked + span{
+      /* background-color: #0f0f0f; */
+      color: rgb(31, 31, 31);
+      border: .12vw solid #0f0f0f;
+    }
+    .shipping-radio input:checked + span::before{
+      box-shadow: inset 0 0 0 0.4vw #252525;
+
+    }
+    
+    .shipping-radio span {
+      display: grid;
+      grid-template-columns: 8% 64% 28%;
+      align-items: center;
+      transition: 0.25s ease;
+      border: .12vw solid #cfcfcf;
+      width: 100%;
+      color: #0f0f0f;
+      background: transparent;
+      padding: .7vw .9vw;
+    }
+    .shipping-radio span::before{
+      display: flex;
+      flex-shrink: 0;
+      content: "";
+      width: 1.5em;
+      height: 1.5em;
+      border-radius: 50%;
+      transition: 0.25s ease;
+      box-shadow: inset 0 0 0 0.125em #5A5958;
+    }
+    .heading-shipping-method{
+      font-size: 1.2vw;
+    }
+    .heading-shipping-method h3{
+      font-size: 1.2vw;
+    }
+    .heading-shipping-method p{
+      font-size: 1.1vw;
+    }
+    .price-shipping{
+      font-size: 1.3vw;
+      text-align: end;
+    }
+    .shipping-heading label{
+      font-size: 1.4vw !important;
+      padding-bottom: 1vw;
+    }
+
+    .find-store{
+      width: 100%;
+      /* padding: 4vw 23vw; */
+      padding: 8vw 0;
+      font-family: futura-medium;
+    }
+    .heading-find-store{
+      text-align: center;
+    }
+    .heading-find-store h1{
+      font-size: 3vw;
+      font-family: futura-heading;
+      text-transform: uppercase;
+    }
+    .heading-find-store p{
+      font-size: 1.3vw;
+    }
+    .layout-find-store{
+      width: 100%;
+    }
+    .layout-find-store-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.7vw;
+      margin-top: 1.7vw;
+    }
+    .layout-find-store-content a{
+      width: 100%;
+    }
+    .layout-find-store-box{
+      width: 100%;
+      border: .12vw solid #0f0f0f;
+      display: grid;
+      grid-template-columns: 19% 56% 25%;
+      padding: 2.7vw 3vw;
+      align-items: center;
+      padding-right: 0;
+      transition: .2s all;
+    }
+    /* .layout-find-store-box:hover{
+      transform: translateX(3%);
+    } */
+    .marketplace-icon{
+      width: 9.2vw;
+      height: 9vw;
+      position: relative;
+      border: .12vw solid #0f0f0f;
+      border-radius: 20vw;
+    }
+    .marketplace-icon img{
+      max-width: 54%;
+      object-fit: contain;
+      filter: grayscale(1);
+      position: absolute;
+      max-height: 54%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: .2s all;
+    }
+    .layout-find-store-box:hover .marketplace-icon img{
+      filter: grayscale(0);
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+    .heading-layout-find-store{
+      padding: 0 2vw;
+    }
+    .heading-layout-find-store h2{
+      font-size: 4.3vw;
+      color: #0f0f0f;
+      font-weight: 600;
+      letter-spacing: .1vw;
+      margin-bottom: .6vw;
+    }
+    .heading-layout-find-store span{
+      font-size: .86vw;
+      text-transform: uppercase;
+      letter-spacing: .14vw;
+      color: #1b1b1b;
+    }
+    .time-layout-find-store{
+      border-left: .12vw solid #e4e4e4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: .4vw;
+    }
+    .time-layout-find-store svg{
+      width: 3.6vw;
+      color: #070909;
+      margin-bottom: .3vw;
+    }
+    .time-layout-find-store span{
+      font-size: .7vw;
+      letter-spacing: .08vw;
+      color: #070909;
+      margin-bottom: .2vw;
+    }
+    .marketplace-store{
+      background: #070909;
+    }
+    .marketplace-store p{
+      color: white;
+      font-size: .8vw;
+      padding: .3vw .6vw;
+      text-transform: uppercase;
+      letter-spacing: .06vw;
+    }
+
+    .findStore{
+      margin-top: 2.6vw;
+    }
+    .slide-find {
+      width: 53% !important;
+    }
+    .findStore .swiper-wrapper{
+      padding-bottom: 6vw;
+    }

@@ -41,7 +41,79 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- jQuery (diperlukan oleh FancyBox) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- FancyBox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+<script>
+  // const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+  // accordionHeaders.forEach(header => {
+  //   header.addEventListener('click', () => {
+  //     const accordionItem = header.parentElement;
+  //     const accordionContent = accordionItem.querySelector('.accordion-content');
+
+  //     accordionItem.classList.toggle('active');
+
+  //     if (accordionItem.classList.contains('active')) {
+  //       accordionContent.style.display = 'block';
+  //     } else {
+  //       accordionContent.style.display = 'none';
+  //     }
+  //   });
+  // });
+  // const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+  // accordionHeaders.forEach(header => {
+  //   header.addEventListener('click', () => {
+  //     const accordionItem = header.parentElement;
+  //     const accordionContent = accordionItem.querySelector('.accordion-content');
+
+  //     accordionItem.classList.toggle('active');
+  //     accordionContent.style.display = accordionItem.classList.contains('active') ? 'block' : 'none';
+  //   });
+  // });
+//   const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+// accordionHeaders.forEach(header => {
+//   header.addEventListener('click', () => {
+//     const accordionItem = header.parentElement;
+//     const accordionContent = accordionItem.querySelector('.accordion-content');
+//     const icon = header.querySelector('ion-icon');
+
+//     accordionItem.classList.toggle('active');
+
+//     if (accordionItem.classList.contains('active')) {
+//       accordionContent.style.display = 'block';
+//       icon.classList.add('rotate');
+//     } else {
+//       accordionContent.style.display = 'none';
+//       icon.classList.remove('rotate');
+//     }
+//   });
+// });
+
+
+</script>
+
+<script>
+    var swiper = new Swiper(".swiperLogin", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      loop:true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      effect: "fade",
+    });
+  </script>
 
 <script>
   var newArrival = new Swiper(".newArrival", {
@@ -88,15 +160,15 @@
 <script>
     var ProductSlider = new Swiper('.tranding-slider', {
       effect: 'coverflow',
-      grabCursor: true,
+      // grabCursor: true,
       centeredSlides: true,
       loop:true,
       slidesPerView: 'auto',
       coverflowEffect: {
         rotate: 0,
         stretch: 0,
-        depth: 300,
-        modifier: 2,
+        depth: 100,
+        modifier: 11,
         slideShadows: false
       },
       navigation: {
@@ -104,7 +176,26 @@
         prevEl: '.swiper-button-prev-product',
       },
     });
+
+    $('[data-fancybox="gallery"]').fancybox({
+    afterShow: function(instance, current) {
+      // Inisialisasi Swiper.js di dalam popup
+      var popupSwiper = new Swiper('#popupModal .swiper-container', {
+        navigation: {
+          nextEl: '#popupModal .swiper-button-next',
+          prevEl: '#popupModal .swiper-button-prev',
+        },
+        loop:true,
+      });
+
+      // Perbarui posisi slide Swiper.js popup sesuai dengan slide yang sedang ditampilkan
+        var activeIndex = current.index;
+        popupSwiper.slideTo(activeIndex, 0);
+      },
+    });
+
     </script>
+
     <script>
       var buttonLayout = document.getElementById("size-button");
       var btnSize = buttonLayout.getElementsByClassName("btn-size");

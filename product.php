@@ -5,38 +5,38 @@
     <div class="container-slide">
         <div class="swiper tranding-slider">
             <div class="swiper-wrapper">
-            <!-- Slide-start -->
+            <!-- Slide-start --> 
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                <img src="image/jacket-2.jpg" alt="Tranding">
+                    <img src="image/jacket-2.jpg" alt="Tranding" data-fancybox="gallery" data-src="image/jacket-2.jpg" >
                 </div>
             </div>
             <!-- Slide-end -->
             <!-- Slide-start -->
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                <img src="image/glittery-1.jpg" alt="Tranding">
+                    <img src="image/glittery-1.jpg" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-1.jpg" >
                 </div>
             </div>
             <!-- Slide-end -->
             <!-- Slide-start -->
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                <img src="image/glittery-2.jpg" alt="Tranding">
+                    <img src="image/glittery-2.jpg" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-2.jpg" >
                 </div>
             </div>
             <!-- Slide-end -->
             <!-- Slide-start -->
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                <img src="image/glittery-3.jpg" alt="Tranding">
+                    <img src="image/glittery-3.jpg" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-3.jpg" >
                 </div>
             </div>
             <!-- Slide-end -->
                 <!-- Slide-start -->
                 <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                <img src="image/glittery-4.jpg" alt="Tranding">
+                     <img src="image/glittery-4.jpg" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-4.jpg" >
                 </div>
             </div>
             <!-- Slide-end -->
@@ -46,14 +46,40 @@
             <div class="swiper-button-next-product"></div>
 
         </div>
+        <!-- Tambahkan modal popup FancyBox -->
+        <div id="popupModal" style="display: none;">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="image/jacket-2.jpg" alt="Popup Image 1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/glittery-1.jpg" alt="Popup Image 2" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/glittery-2.jpg" alt="Popup Image 2" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/glittery-3.jpg" alt="Popup Image 2" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/glittery-4.jpg" alt="Popup Image 2" />
+                    </div>
+                </div>
+
+                <!-- Tambahkan tombol navigasi Swiper.js -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
     </div>
 
     <div class='product-box'>
         <div class='product-box-category'>
-        <span>Product Category : <b>Fusion Jacket</b></span>
+            <span>Product Category : <b>Fusion Jacket</b></span>
         </div>
         <div class='product-box-name'>
-        <h1>Glittery Emerald White</h1>
+            <h1>Glittery Emerald White</h1>
         </div>
         <div class='product-box-spesification'>
         <div class='spesification-icon'>
@@ -116,12 +142,15 @@
                     <ion-icon name="bag-handle-outline"></ion-icon>Add to Cart
                 </button>
             </a>
-            <button class='add-to-wishlist-product'>
-                <ion-icon name="heart-outline"></ion-icon>
-            </button>
+            <a href="wishlist.php">
+                <button class='add-to-wishlist-product'>
+                    <ion-icon name="heart-outline"></ion-icon>
+                </button>
+            </a>
+            
         </div>
     </div>
-    <div class="popup" id="popupGuide" >
+    <div class="popup" id="popupGuide" style="display: none;">
         <div class="popup-content">
             <div class="popup-chart-img">
                 <img src="image/jacket-size-chart.webp" alt="">

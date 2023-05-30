@@ -1,6 +1,6 @@
 
 .tranding-slide {
-      width: 37rem;
+      width: 43rem;
       height: max-content;
       padding-bottom: 3.7vw;
       position: relative;
@@ -21,6 +21,7 @@
       width: 100%;
         filter: blur(2px) !important;
         border-radius: .4vw !important;
+        border: .12vw solid black;
       /* height: 42rem;
       border-radius: 2rem;
       object-fit: cover; */
@@ -74,6 +75,26 @@
         right: auto;
     }
     .container-slide{
-        width: 53%;
+        width: 56.54%;
         margin: auto;
+    }
+
+    #popupModal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 99;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+    
+    #popupModal .swiper-slide img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 10vw !important;
+      z-index: 79;
     }

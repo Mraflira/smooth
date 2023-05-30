@@ -17,83 +17,163 @@
                 <button class="accordion">Jacket</button>
                 <div class="panel">
                   <div class="accordion-category-list">
-                    <span>Futurist Jacket</span>
-                    <input type="checkbox">
+                      <label class="pilih-category">Futurist Jacket
+                          <input type="checkbox">
+                          <span class="checkmark-category"></span>
+                      </label>
                   </div>
                   <div class="accordion-category-list">
-                    <span>Futurist Jacket</span>
-                    <input type="checkbox">
+                      <label class="pilih-category">Futurist Jacket
+                          <input type="checkbox">
+                          <span class="checkmark-category"></span>
+                      </label>
                   </div>
                   <div class="accordion-category-list">
-                    <span>Futurist Jacket</span>
-                    <input type="checkbox">
+                        <label class="pilih-category">Futurist Jacket
+                          <input type="checkbox">
+                          <span class="checkmark-category"></span>
+                        </label>
                   </div>
                   <div class="accordion-category-list">
-                    <span>Futurist Jacket</span>
-                    <input type="checkbox">
+                        <label class="pilih-category">Futurist Jacket
+                          <input type="checkbox">
+                          <span class="checkmark-category"></span>
+                      </label>
                   </div>
                 </div>
 
                 <button class="accordion">Shirt</button>
                 <div class="panel">
                   <div class="accordion-category-list">
-                    <span>Smooth Jacket</span>
-                    <input type="checkbox">
+                      <label class="pilih-category">Smooth Jacket
+                        <input type="checkbox">
+                        <span class="checkmark-category"></span>
+                      </label>
                   </div>
                   <div class="accordion-category-list">
-                    <span>Smooth Jacket</span>
-                    <input type="checkbox">
+                      <label class="pilih-category">Smooth Jacket
+                        <input type="checkbox">
+                        <span class="checkmark-category"></span>
+                      </label>
                   </div>
                   <div class="accordion-category-list">
-                    <span>Smooth Jacket</span>
-                    <input type="checkbox">
+                      <label class="pilih-category">Smooth Jacket
+                        <input type="checkbox">
+                        <span class="checkmark-category"></span>
+                      </label>
                   </div>
                   <div class="accordion-category-list">
-                    <span>Smooth Jacket</span>
-                    <input type="checkbox">
+                      <label class="pilih-category">Smooth Jacket
+                        <input type="checkbox">
+                        <span class="checkmark-category"></span>
+                      </label>
                   </div>
                 </div>
 
                 <button class="accordion">Pants</button>
                 <div class="panel">
                   <div class="accordion-category-list">
-                    <span>Pants Jacket</span>
-                    <input type="checkbox">
+                      <label class="pilih-category">Pants Jacket
+                        <input type="checkbox">
+                        <span class="checkmark-category"></span>
+                      </label>
                   </div>
                   <div class="accordion-category-list">
-                    <span>Pants Jacket</span>
-                    <input type="checkbox">
+                      <label class="pilih-category">Pants Jacket
+                        <input type="checkbox">
+                        <span class="checkmark-category"></span>
+                      </label>
                   </div>
                   <div class="accordion-category-list">
-                    <span>Pants Jacket</span>
-                    <input type="checkbox">
+                      <label class="pilih-category">Pants Jacket
+                        <input type="checkbox">
+                        <span class="checkmark-category"></span>
+                      </label>
                   </div>
                   <div class="accordion-category-list">
-                    <span>Pants Jacket</span>
-                    <input type="checkbox">
+                      <label class="pilih-category">Pants Jacket
+                        <input type="checkbox">
+                        <span class="checkmark-category"></span>
+                      </label>
                   </div>
                 </div>
 
                 <button class="accordion">Accessories</button>
                 <div class="panel">
                   <div class="accordion-category-list">
-                    <span>Futurist Accessories</span>
-                    <input type="checkbox">
+                      <label class="pilih-category">Futurist Accesories
+                        <input type="checkbox">
+                        <span class="checkmark-category"></span>
+                      </label>
                   </div>
                   <div class="accordion-category-list">
-                    <span>Futurist Accessories</span>
-                    <input type="checkbox">
+                      <label class="pilih-category">Futurist Accesories
+                        <input type="checkbox">
+                        <span class="checkmark-category"></span>
+                      </label>
                   </div>
                   <div class="accordion-category-list">
-                    <span>Futurist Accessories</span>
-                    <input type="checkbox">
+                      <label class="pilih-category">Futurist Accesories
+                        <input type="checkbox">
+                        <span class="checkmark-category"></span>
+                      </label>
                   </div>
                   <div class="accordion-category-list">
-                    <span>Futurist Accessories</span>
-                    <input type="checkbox">
+                      <label class="pilih-category">Futurist Accesories
+                        <input type="checkbox">
+                        <span class="checkmark-category"></span>
+                      </label>
                   </div>
                 </div>
               </div>
+              <!-- <div class="accordion">
+                <div class="accordion-item">
+                  <div class="accordion-header">Jacket
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </div>
+                  <div class="accordion-content">
+                    <div class="sub-accordion">
+                      <div class="accordion-item">
+                        <div class="accordion-header">Fusion Series</div>
+                        <div class="accordion-content">
+                        <div>
+                          <label class="pilih-category">
+                              <input type="checkbox">
+                              <span class="checkmark-category"></span>
+                          </label>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <div class="accordion-header">Futurist Series</div>
+                        <div class="accordion-content">
+                          <p>Content of Sub Accordion 2</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header">Accordion 2</div>
+                  <div class="accordion-content">
+                    <div class="sub-accordion">
+                      <div class="accordion-item">
+                        <div class="accordion-header">Sub Accordion 1</div>
+                        <div class="accordion-content">
+                          <p>Content of Sub Accordion 1</p>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <div class="accordion-header">Sub Accordion 2</div>
+                        <div class="accordion-content">
+                          <p>Content of Sub Accordion 2</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
             </div>
         </div>
         <div class='catalog-layout'>

@@ -4,7 +4,7 @@
     
 <div class="slide-show-banner">
     <div class="heading-banner">
-          <img src="image/burger-menu.svg" alt="" class="hamburger-banner">
+          <!-- <img src="image/burger-menu.svg" alt="" class="hamburger-banner"> -->
         <h1>Street movement out of trend habits</h1>
         <p>Providing the best apparel with affordable price</p>
     </div>
@@ -45,15 +45,22 @@
 <div class="category-section">
   <h1>Choose Your <b>Category</b></h1>
   <div class="category-layout-homepage">
+    <a href="new-arrivals.php">
     <div class="category-box">
       <img src="image/futurist.jpg" alt="">
     </div>
+    </a>
+    <a href="new-arrivals.php">
     <div class="category-box">
       <img src="image/vintage.jpg" alt="">
     </div>
+    </a>
+    <a href="new-arrivals.php">
     <div class="category-box">
       <img src="image/finest.jpg" alt="">
     </div>
+    </a>
+    
   </div>
 </div>
 
