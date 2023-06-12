@@ -166,9 +166,9 @@
       slidesPerView: 'auto',
       coverflowEffect: {
         rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 11,
+        stretch: 70,
+        depth: 390,
+        modifier: 2,
         slideShadows: false
       },
       navigation: {
@@ -233,6 +233,34 @@
         qtyElement.textContent = qty;
       }
 
+    </script>
+    <script>
+      var popupButtons = document.querySelectorAll(".popupButtonCatalog");
+      var popupContainers = document.querySelectorAll(".popupCatalogProduct");
+      var closeButtons = document.querySelectorAll(".closeButtonCatalog");
+
+      popupButtons.forEach(function(button, index) {
+        button.addEventListener("click", function() {
+          popupContainers[index].style.display = "block";
+        });
+      });
+
+      closeButtons.forEach(function(button, index) {
+        button.addEventListener("click", function() {
+          popupContainers[index].style.display = "none";
+        });
+      });
+
+    </script>
+    <script>
+      var swiperCategoryHome = new Swiper(".swiperCategoryHome", {
+      navigation: {
+        nextEl: ".swiper-button-next-category",
+        prevEl: ".swiper-button-prev-category",
+      },
+      slidesPerView: 3,
+      spaceBetween: 60,
+      });
     </script>
 </body>
 </html>

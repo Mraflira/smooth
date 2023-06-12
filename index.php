@@ -44,23 +44,63 @@
 
 <div class="category-section">
   <h1>Choose Your <b>Category</b></h1>
-  <div class="category-layout-homepage">
+  <!-- <div class="category-layout-homepage">
     <a href="new-arrivals.php">
-    <div class="category-box">
-      <img src="image/futurist.jpg" alt="">
-    </div>
+      <div class="category-box">
+        <img src="image/futurist.jpg" alt="">
+      </div>
     </a>
     <a href="new-arrivals.php">
-    <div class="category-box">
-      <img src="image/vintage.jpg" alt="">
-    </div>
+      <div class="category-box">
+        <img src="image/vintage.jpg" alt="">
+      </div>
     </a>
     <a href="new-arrivals.php">
-    <div class="category-box">
-      <img src="image/finest.jpg" alt="">
-    </div>
+      <div class="category-box">
+        <img src="image/finest.jpg" alt="">
+      </div>
     </a>
-    
+  </div> -->
+  <div class="swiper swiperCategoryHome">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="new-arrivals.php">
+          <div class="category-box">
+            <img src="image/futurist.jpg" alt="">
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="new-arrivals.php">
+          <div class="category-box">
+            <img src="image/vintage.jpg" alt="">
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="new-arrivals.php">
+          <div class="category-box">
+            <img src="image/finest.jpg" alt="">
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="new-arrivals.php">
+          <div class="category-box">
+            <img src="image/finest.jpg" alt="">
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="new-arrivals.php">
+          <div class="category-box">
+            <img src="image/finest.jpg" alt="">
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="swiper-button-next swiper-button-next-category"></div>
+    <div class="swiper-button-prev swiper-button-prev-category"></div>
   </div>
 </div>
 

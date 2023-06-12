@@ -126,53 +126,6 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="accordion">
-                <div class="accordion-item">
-                  <div class="accordion-header">Jacket
-                    <ion-icon name="chevron-down-outline"></ion-icon>
-                  </div>
-                  <div class="accordion-content">
-                    <div class="sub-accordion">
-                      <div class="accordion-item">
-                        <div class="accordion-header">Fusion Series</div>
-                        <div class="accordion-content">
-                        <div>
-                          <label class="pilih-category">
-                              <input type="checkbox">
-                              <span class="checkmark-category"></span>
-                          </label>
-                        </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <div class="accordion-header">Futurist Series</div>
-                        <div class="accordion-content">
-                          <p>Content of Sub Accordion 2</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <div class="accordion-header">Accordion 2</div>
-                  <div class="accordion-content">
-                    <div class="sub-accordion">
-                      <div class="accordion-item">
-                        <div class="accordion-header">Sub Accordion 1</div>
-                        <div class="accordion-content">
-                          <p>Content of Sub Accordion 1</p>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <div class="accordion-header">Sub Accordion 2</div>
-                        <div class="accordion-content">
-                          <p>Content of Sub Accordion 2</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
 
             </div>
         </div>
@@ -192,11 +145,25 @@
             </div>
           </div>
           <div class='catalog-product'>
-            <a href="product.php">
-              <div class='catalog-product-box'>
-                <div class='catalog-product-image'>
-                  <img src='image/jacket-4.jpg'/>
+            <div class='catalog-product-box'>
+              <div class='catalog-product-image'>
+                <div class="button-product-catalog">
+                  <div class="button-icon-catalog">
+                      <ion-icon name="heart"></ion-icon>
+                  </div>
+                  <div class="button-icon-catalog popupButtonCatalog">
+                    <ion-icon name="search"></ion-icon>
+                  </div>
+                  <div class="button-icon-catalog">
+                    <ion-icon name="cart"></ion-icon>
+                  </div>
                 </div>
+                <a href="product.php">
+                  <div class="overlay-product"></div>
+                </a>
+                <img src='image/jacket-4.jpg'/>
+              </div>
+              <a href="product.php">
                 <div class='catalog-product-content'>
                   <div class='catalog-product-desc'>
                     <span><b>Fusion Series</b></span>
@@ -208,23 +175,51 @@
                     <h5>99.000</h5>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
+            <div class="popupCatalogProduct">
+              <span class="closeButtonCatalog">
+                <ion-icon name="close"></ion-icon>
+              </span>
+              <img class="popupImageCatalog" src="image/jacket-4.jpg" alt="Gambar">
+            </div>
             <div class='catalog-product-box'>
               <div class='catalog-product-image'>
+                <div class="button-product-catalog">
+                  <div class="button-icon-catalog">
+                      <ion-icon name="heart"></ion-icon>
+                  </div>
+                  <div class="button-icon-catalog popupButtonCatalog">
+                    <ion-icon name="search"></ion-icon>
+                  </div>
+                  <div class="button-icon-catalog">
+                    <ion-icon name="cart"></ion-icon>
+                  </div>
+                </div>
+                <a href="product.php">
+                  <div class="overlay-product"></div>
+                </a>
                 <img src='image/jacket-2.jpg'/>
               </div>
-              <div class='catalog-product-content'>
-                <div class='catalog-product-desc'>
-                  <span><b>Fusion Series</b></span>
-                  <span>Oversized Tees Obeylix White</span>
-                  <span>Tees Collections</span>
+              <a href="product.php">
+                <div class='catalog-product-content'>
+                  <div class='catalog-product-desc'>
+                    <span><b>Fusion Series</b></span>
+                    <span>Oversized Tees Obeylix White</span>
+                    <span>Tees Collections</span>
+                  </div>
+                  <div class='catalog-product-price'>
+                    <span>190.000</span>
+                    <h5>99.000</h5>
+                  </div>
                 </div>
-                <div class='catalog-product-price'>
-                  <span>190.000</span>
-                  <h5>99.000</h5>
-                </div>
-              </div>
+              </a>
+            </div>
+            <div class="popupCatalogProduct">
+              <span class="closeButtonCatalog">
+                <ion-icon name="close"></ion-icon>
+              </span>
+              <img class="popupImageCatalog" src="image/jacket-2.jpg" alt="Gambar">
             </div>
             <div class='catalog-product-box'>
               <div class='catalog-product-image'>

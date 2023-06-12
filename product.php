@@ -15,28 +15,28 @@
             <!-- Slide-start -->
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                    <img src="image/glittery-1.jpg" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-1.jpg" >
+                    <img src="image/glittery-1.png" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-1.jpg" >
                 </div>
             </div>
             <!-- Slide-end -->
             <!-- Slide-start -->
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                    <img src="image/glittery-2.jpg" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-2.jpg" >
+                    <img src="image/glittery-2.png" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-2.jpg" >
                 </div>
             </div>
             <!-- Slide-end -->
             <!-- Slide-start -->
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                    <img src="image/glittery-3.jpg" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-3.jpg" >
+                    <img src="image/glittery-3.png" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-3.jpg" >
                 </div>
             </div>
             <!-- Slide-end -->
                 <!-- Slide-start -->
                 <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                     <img src="image/glittery-4.jpg" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-4.jpg" >
+                     <img src="image/glittery-4.png" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-4.jpg" >
                 </div>
             </div>
             <!-- Slide-end -->
@@ -246,7 +246,7 @@
       </div>
 </div>
 
-
+ 
 <?php 
 include 'template/footer.php'
 ?>

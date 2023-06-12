@@ -3,6 +3,7 @@
       width: 43rem;
       height: max-content;
       padding-bottom: 3.7vw;
+      padding-top: 2vw;
       position: relative;
     }
     
@@ -18,16 +19,19 @@
     }
     
     .tranding-slider .swiper-slide .tranding-slide-img img {
-      width: 100%;
-        filter: blur(2px) !important;
-        border-radius: .4vw !important;
-        border: .12vw solid black;
+      width: 39vw !important;
+        filter: blur(2px) drop-shadow(0 0 0.75rem rgba(31, 31, 31, 0.247)) grayscale(1) !important;
+        margin: auto !important;
+        display: block !important;
+        cursor: pointer;
+        
       /* height: 42rem;
       border-radius: 2rem;
       object-fit: cover; */
     }
     .tranding-slider .swiper-slide-active .tranding-slide-img img{
-        filter: blur(0) !important;
+        filter: blur(0) grayscale(0) drop-shadow(0 0 0.75rem rgba(31, 31, 31, 0.247)) !important;
+        border-radius: .4vw !important;
     }
     .swiper-button-next-product, .swiper-button-prev-product {
         position: absolute;
@@ -75,7 +79,7 @@
         right: auto;
     }
     .container-slide{
-        width: 56.54%;
+        width: 62vw;
         margin: auto;
     }
 
