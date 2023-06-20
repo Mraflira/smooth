@@ -5,41 +5,31 @@
     <div class="container-slide">
         <div class="swiper tranding-slider">
             <div class="swiper-wrapper">
-            <!-- Slide-start --> 
-            <div class="swiper-slide tranding-slide">
-                <div class="tranding-slide-img">
-                    <img src="image/jacket-2.jpg" alt="Tranding" data-fancybox="gallery" data-src="image/jacket-2.jpg" >
-                </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-                <div class="tranding-slide-img">
-                    <img src="image/glittery-1.png" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-1.jpg" >
-                </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-                <div class="tranding-slide-img">
-                    <img src="image/glittery-2.png" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-2.jpg" >
-                </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-                <div class="tranding-slide-img">
-                    <img src="image/glittery-3.png" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-3.jpg" >
-                </div>
-            </div>
-            <!-- Slide-end -->
-                <!-- Slide-start -->
                 <div class="swiper-slide tranding-slide">
-                <div class="tranding-slide-img">
-                     <img src="image/glittery-4.png" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-4.jpg" >
+                    <div class="tranding-slide-img">
+                        <img src="image/glittery-1.png" alt="Tranding" data-fancybox="gallery" data-src="image/jacket-2.jpg" >
+                    </div>
                 </div>
-            </div>
-            <!-- Slide-end -->
+                <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                        <img src="image/glittery-1.png" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-1.jpg" >
+                    </div>
+                </div>
+                <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                        <img src="image/glittery-1.png" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-2.jpg" >
+                    </div>
+                </div>
+                <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                        <img src="image/glittery-1.png" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-3.jpg" >
+                    </div>
+                </div>
+                <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                        <img src="image/glittery-1.png" alt="Tranding" data-fancybox="gallery" data-src="image/glittery-3.jpg" >
+                    </div>
+                </div>
             </div>
 
             <div class="swiper-button-prev-product"></div>
@@ -119,19 +109,51 @@
             <span>Quantity :</span>
             <div class='qty-layout'>
                 <button onclick="decreaseQty()">-</button>
-                <p id="qty">1</p>
+                <input type="text" value="1" id="qty"/>
                 <button onclick="increaseQty()">+</button>
             </div>
         </div>
         <div class='size-select'>
             <span>Size :</span>
             <div class='qty-layout'>
-                <div id="size-button">
+                <!-- <div id="size-button">
                     <button class="btn-size" disabled>S</button>
                     <button class="btn-size active">M</button>
                     <button class="btn-size">L</button>
                     <button class="btn-size">XL</button>
+                </div> -->
+                
+                <div class="size-button">
+                    <div class="choose-size-box size-s">
+                        <input type="checkbox" id="size-s" onchange="updateCheckbox('size-s')" disabled/>
+                        <div class="size-content">
+                            <span>S</span>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="choose-size-box size-m">
+                        <input type="checkbox" id="size-m" onchange="updateCheckbox('size-m')"/>
+                        <div class="size-content">
+                            <span>M</span>
+                        </div>
+                    </div>
+                    
+                    <div class="choose-size-box size-l">
+                        <input type="checkbox" id="size-l" onchange="updateCheckbox('size-l')"/>
+                        <div class="size-content">
+                            <span>L</span>
+                        </div>
+                    </div>
+                    
+                    <div class="choose-size-box size-xl">
+                        <input type="checkbox" id="size-xl" onchange="updateCheckbox('size-xl')"/>
+                        <div class="size-content">
+                            <span>XL</span>
+                        </div>
+                    </div>
                 </div>
+                    
             <button class='size-guide' onclick="togglePopup()">Size Guide...</button>
             </div>
         </div>

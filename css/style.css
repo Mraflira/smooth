@@ -1101,9 +1101,20 @@
     height:2.9vw;
     font-family:futura-medium;
   }
-  #size-button{
+  .size-button{
     display: flex;
     gap: .9vw;
+  }
+  .qty-layout input{
+    width: 2.9vw;
+    height: 2.9vw;
+    border: none;
+    outline: none;
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: futura-medium;
+    font-size: 1.1vw;
   }
   .qty-layout .size-guide{
     width:max-content;
@@ -2125,4 +2136,45 @@
     }
     .swiperCategoryHome .swiper-wrapper{
       padding-bottom: 8.4vw;
+    }
+    
+    .choose-size-box {
+      position: relative;
+      width: 2.9vw;
+      height: 2.9vw;
+      float: left;
+      border: .12vw solid #000000;
+      box-sizing: border-box;
+    }
+    
+    .choose-size-box input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2.9vw;
+      height: 2.9vw;
+      opacity: 0;
+      cursor: pointer;
+      z-index: 5;
+    }
+    .size-content{
+      background-color: transparent;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .size-content span{
+      color: black;
+    }
+    
+    .choose-size-box input[type=checkbox]:checked ~ .size-content {
+      background-color: black;
+    }
+    .choose-size-box input[type=checkbox]:checked ~ .size-content span{
+      color: white;
     }

@@ -2,9 +2,9 @@
   <div class="footer">
     <div class="footer-menu">
       <ul>
-        <a href="#"><li>Find a store</li></a>
+        <a href="find-store.php"><li>Find a store</li></a>
         <a href="#"><li>Become a member</li></a>
-        <a href="#"><li>Sign up for email</li></a>
+        <a href="register.php"><li>Sign up for email</li></a>
         <a href="#"><li>Flashsale items</li></a>
         <a href="#"><li>Send Us Feedback</li></a>
       </ul>
@@ -14,13 +14,13 @@
         <a href="#"><li>Delivery</li></a>
         <a href="#"><li>Returns</li></a>
         <a href="#"><li>Payment Option</li></a>
-        <a href="#"><li>Contact Us</li></a>
+        <a href="https://api.whatsapp.com/send?phone=6287742385052"><li>Contact Us</li></a>
       </ul>
     </div>
     <div class="social-media-footer">
-        <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
-        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-        <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+        <a href="https://www.tiktok.com/@smoothbasic.official" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a>
+        <a href="https://www.instagram.com/smooth.basic/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://api.whatsapp.com/send?phone=6287742385052" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
     </div>
   </div>
   <div class="footer-menu-second">
@@ -47,58 +47,6 @@
 
 <!-- FancyBox JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-
-
-<script>
-  // const accordionHeaders = document.querySelectorAll('.accordion-header');
-
-  // accordionHeaders.forEach(header => {
-  //   header.addEventListener('click', () => {
-  //     const accordionItem = header.parentElement;
-  //     const accordionContent = accordionItem.querySelector('.accordion-content');
-
-  //     accordionItem.classList.toggle('active');
-
-  //     if (accordionItem.classList.contains('active')) {
-  //       accordionContent.style.display = 'block';
-  //     } else {
-  //       accordionContent.style.display = 'none';
-  //     }
-  //   });
-  // });
-  // const accordionHeaders = document.querySelectorAll('.accordion-header');
-
-  // accordionHeaders.forEach(header => {
-  //   header.addEventListener('click', () => {
-  //     const accordionItem = header.parentElement;
-  //     const accordionContent = accordionItem.querySelector('.accordion-content');
-
-  //     accordionItem.classList.toggle('active');
-  //     accordionContent.style.display = accordionItem.classList.contains('active') ? 'block' : 'none';
-  //   });
-  // });
-//   const accordionHeaders = document.querySelectorAll('.accordion-header');
-
-// accordionHeaders.forEach(header => {
-//   header.addEventListener('click', () => {
-//     const accordionItem = header.parentElement;
-//     const accordionContent = accordionItem.querySelector('.accordion-content');
-//     const icon = header.querySelector('ion-icon');
-
-//     accordionItem.classList.toggle('active');
-
-//     if (accordionItem.classList.contains('active')) {
-//       accordionContent.style.display = 'block';
-//       icon.classList.add('rotate');
-//     } else {
-//       accordionContent.style.display = 'none';
-//       icon.classList.remove('rotate');
-//     }
-//   });
-// });
-
-
-</script>
 
 <script>
     var swiper = new Swiper(".swiperLogin", {
@@ -160,7 +108,6 @@
 <script>
     var ProductSlider = new Swiper('.tranding-slider', {
       effect: 'coverflow',
-      // grabCursor: true,
       centeredSlides: true,
       loop:true,
       slidesPerView: 'auto',
@@ -168,7 +115,7 @@
         rotate: 0,
         stretch: 70,
         depth: 390,
-        modifier: 2,
+        modifier: 3.4,
         slideShadows: false
       },
       navigation: {
@@ -197,15 +144,31 @@
     </script>
 
     <script>
-      var buttonLayout = document.getElementById("size-button");
-      var btnSize = buttonLayout.getElementsByClassName("btn-size");
-      for (var i = 0; i < btnSize.length; i++) {
-        btnSize[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
+      // var buttonLayout = document.getElementById("size-button");
+      // var btnSize = buttonLayout.getElementsByClassName("btn-size");
+      // for (var i = 0; i < btnSize.length; i++) {
+      //   btnSize[i].addEventListener("click", function() {
+      //   var current = document.getElementsByClassName("active");
+      //   current[0].className = current[0].className.replace(" active", "");
+      //   this.className += " active";
+      //   });
+      // }
+      function updateCheckbox(checkboxId) {
+        var checkboxes = document.querySelectorAll('.choose-size-box input[type="checkbox"]');
+        checkboxes.forEach(function (checkbox) {
+          var sizeContent = checkbox.nextElementSibling.querySelector("span");
+          if (checkbox.id === checkboxId) {
+            checkbox.checked = true;
+            checkbox.parentNode.classList.add('active');
+            sizeContent.style.opacity =1;
+          } else {
+            checkbox.checked = false;
+            checkbox.parentNode.classList.remove('active');
+            sizeContent.style.opacity = checkbox.disabled ? 0.3 : 1;
+          }
         });
       }
+
     </script>
     <script>
       function togglePopup() {
@@ -230,7 +193,7 @@
       }
 
       function updateQty() {
-        qtyElement.textContent = qty;
+        qtyElement.value = qty;
       }
 
     </script>

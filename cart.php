@@ -29,7 +29,7 @@
                 <div class="cart-product-quantity">
                     <div class='qty-layout'>
                         <button onclick="decreaseQty()">-</button>
-                        <p id="qty">1</p>
+                        <input type="text" value="1" id="qty"/>
                         <button onclick="increaseQty()">+</button>
                     </div>
                     <div class="cart-product-option">
