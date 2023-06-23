@@ -147,6 +147,9 @@
           <div class='catalog-product'>
             <div class='catalog-product-box'>
               <div class='catalog-product-image'>
+                <!-- Diisi link juga mobile -->
+                <a class="link-for-mobile" href="product.php"></a>
+                <!-- Diisi link juga untuk mobile -->
                 <div class="button-product-catalog">
                   <div class="button-icon-catalog">
                       <ion-icon name="heart"></ion-icon>

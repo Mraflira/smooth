@@ -19,9 +19,15 @@
 <div class="navbar-top">
     <div class="logo-navbar">
         <a href="index.php"><img src="image/logo.png" alt="Logo Smooth"></a>
+    </div>
+    <div class="hamburger-menu"  onclick="buttonHamburger();">
+        <div id="menuIconContainer">
+            <ion-icon id="menuIcon" name="menu-outline"></ion-icon>
+        </div>
         
     </div>
-    <ul>
+    <ul id="list-menu">
+        <a href="index.php"><img src="image/logo.png" alt="Logo Smooth"></a>
         <li><a href="find-store.php">Find a store</a></li>
         <li><a href="https://api.whatsapp.com/send?phone=6287742385052" target="_blank">Help</a></li>
         <li><a href="https://www.instagram.com/smooth.basic/" target="_blank">Join Us</a></li>
@@ -40,14 +46,17 @@
         <ion-icon name="search"></ion-icon>
         <input type="text" placeholder="Search">
     </div>
-    <div class="like-button">
-        <a href="wishlist.php">
-            <ion-icon name="heart-outline"></ion-icon>
-        </a>
+    <div class="button-header-menu">
+        <div class="like-button">
+            <a href="wishlist.php">
+                <ion-icon name="heart-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="cart-button">
+            <a href="cart.php">
+                <ion-icon name="bag-handle-outline"></ion-icon>
+            </a>
+        </div>
     </div>
-    <div class="cart-button">
-        <a href="cart.php">
-            <ion-icon name="bag-handle-outline"></ion-icon>
-        </a>
-    </div>
+    
 </div>

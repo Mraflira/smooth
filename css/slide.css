@@ -1,109 +1,132 @@
 .tranding-slider{
-  width:45vw;
+  width:47vw;
   padding: 0 25vw;
+  padding-bottom: 4vw;
 }
 .tranding-slide {
-      /* width: 30.5rem; */
-      width: 42.2vw;
-      height: max-content;
-      padding-bottom: 3.7vw;
-      padding-top: 2vw;
-      position: relative;
-      /* background: rgba(0, 128, 0, 0.39); */
-    }
-    
-    @media (max-width:500px) {
-      .tranding-slide {
-        width: 28rem !important;
-        height: 36rem !important;
-      }
-      .tranding-slide .tranding-slide-img img {
-        width: 28rem !important;
-        height: 36rem !important;
-      }
-    }
-    
-    .tranding-slider .swiper-slide .tranding-slide-img img {
-      width: 39vw !important;
-        filter: blur(2px)  grayscale(1) !important;
-        margin: auto !important;
-        display: block !important;
-        cursor: pointer;
-      /* height: 42rem;
-      border-radius: 2rem;
-      object-fit: cover; */
-    }
-    .tranding-slider .swiper-slide-active .tranding-slide-img img{
-        filter: blur(0) grayscale(0) drop-shadow(0 0 0.75rem rgba(31, 31, 31, 0.247)) !important;
-        border-radius: .4vw !important;
-        background: transparent;
-    }
-    .swiper-button-next-product, .swiper-button-prev-product {
-        position: absolute;
-        top: 96% !important;
-        width:max-content !important;
-        height: var(--swiper-navigation-size);
-        margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
-        z-index: 10;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--swiper-navigation-color,var(--swiper-theme-color));
-    }
-    .swiper-button-next-product:after  {
-        width: 5vw !important;
-        height: 5vw !important;
-        content: '' !important;
-        background-image: url('https://api.iconify.design/material-symbols/chevron-right-rounded.svg') !important;
-        background-size: contain !important;
-        background-repeat: no-repeat;
-    }
-    .swiper-button-prev-product:after{
-        width: 5vw !important;
-        height: 5vw !important;
-        content: '' !important;
-        background-size: contain !important;
-        background-repeat: no-repeat;
-        background-image: url('https://api.iconify.design/material-symbols/chevron-left-rounded.svg') !important;
-    }
-    .swiper-button-next-product:after, .swiper-button-prev-product:after {
-        font-family: none !important;
-        font-size: var(--swiper-navigation-size);
-        text-transform: none!important;
-        letter-spacing: 0;
-        font-variant: initial;
-        line-height: 1;
-    }
-    .swiper-button-next-product {
-        right: 38% !important;
-        left: auto;
-    }
-    .swiper-button-prev-product {
-        left: 38% !important;
-        right: auto;
-    }
-    .container-slide{
-        width: 62vw;
-        margin: auto;
-    }
+  width: 42vw;
+  height: max-content;
+  padding-bottom:0;
+  padding-top: 2vw;
+  position: relative;
+} 
+.tranding-slider .swiper-slide .tranding-slide-img img {
+  width: 100% !important;
+  margin-bottom: -5vw;
+    filter: blur(2px)  grayscale(1) !important;
+    margin: auto !important;
+    display: block !important;
+    cursor: pointer;
+}
+.tranding-slider .swiper-slide-active .tranding-slide-img img{
+    filter: blur(0) grayscale(0) drop-shadow(0 0 0.75rem rgba(31, 31, 31, 0.247)) !important;
+    border-radius: .4vw !important;
+    background: transparent;
+}
+.swiper-button-next-product, .swiper-button-prev-product {
+    position: absolute;
+    top: 96% !important;
+    width:max-content !important;
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+}
+.swiper-button-next-product:after  {
+    width: 5vw !important;
+    height: 5vw !important;
+    content: '' !important;
+    background-image: url('https://api.iconify.design/material-symbols/chevron-right-rounded.svg') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
+.swiper-button-prev-product:after{
+    width: 5vw !important;
+    height: 5vw !important;
+    content: '' !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-image: url('https://api.iconify.design/material-symbols/chevron-left-rounded.svg') !important;
+}
+.swiper-button-next-product:after, .swiper-button-prev-product:after {
+    font-family: none !important;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none!important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+.swiper-button-next-product {
+    right: 38% !important;
+    left: auto;
+}
+.swiper-button-prev-product {
+    left: 38% !important;
+    right: auto;
+}
+.container-slide{
+    width: 62vw;
+    margin: auto;
+}
 
-    #popupModal {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 99;
-      background-color: rgba(0, 0, 0, 0.9);
-    }
-    
-    #popupModal .swiper-slide img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 10vw !important;
-      z-index: 79;
+#popupModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#popupModal .swiper-slide img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10vw !important;
+  z-index: 79;
+}
+    @media (max-width:768px) {
+      .tranding-slider{
+        width: 100%;
+        padding: 0;
+        padding-bottom: 5vw;
+      }
+      .tranding-slide {
+        width: 100% !important;
+        height: max-content;
+      }
+      .tranding-slider .swiper-slide .tranding-slide-img img {
+        width: 80% !important;
+      }
+      .tranding-slider .swiper-slide-active .tranding-slide-img img{
+        width: 80% !important;
+      }
+      .container-slide{
+        width: 100%;
+        margin: auto;
+      }
+      .swiper-button-next-product, .swiper-button-prev-product {
+        top: 96% !important;
+      }
+      .swiper-button-next-product:after  {
+        width: 13vw !important;
+        height: 13vw !important;
+      }
+      .swiper-button-prev-product:after{
+          width: 13vw !important;
+          height: 13vw !important;
+      }
+      .swiper-button-next-product {
+        right: 36% !important;
+      }
+      .swiper-button-prev-product {
+          left: 36% !important;
+      }
     }

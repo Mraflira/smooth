@@ -4,7 +4,7 @@
 
    <div class="checkout">
         <div class="heading-checkout">
-            <h1>Checkout</h1>
+            <h1>Shipping</h1>
         </div>
         <div class="form-checkout-layout">
             <div class="shipping-input-layout">
@@ -23,30 +23,6 @@
                     </div>
                 </div>
                 <div class="shipping-select">
-                    <!-- <div class="wrapper">
-                        <input type="radio" name="select" id="option-1" checked>
-                        <input type="radio" name="select" id="option-2">
-                        <label for="option-1" class="option option-1">
-                            <div class="dot"></div>
-                            <div class="heading-shipping-method">
-                                <span>JNE - REG (Layanan Reguler)</span>
-                                <p>1-2 Days</p>
-                            </div>
-                            <div class="price-shipping">
-                                <span>Rp.9,000.00</span>
-                            </div>
-                        </label>
-                        <label for="option-2" class="option option-2">
-                            <div class="dot"></div>
-                            <div class="heading-shipping-method">
-                                <span>JNE - REG (Layanan Reguler)</span>
-                                <p>1-2 Days</p>
-                            </div>
-                            <div class="price-shipping">
-                                <span>Rp.9,000.00</span>
-                            </div>
-                        </label>
-                    </div> -->
                     <div class="shipping-heading">
                         <label>Shipping Method</label>
                     </div>

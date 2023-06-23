@@ -10,99 +10,101 @@
                     <span>Remove</span>
                 </button>
             </div>
-
-            <div class="cart-product-body-heading">
-                <h3>Product</h3>
-                <h3>Quantity</h3>
-                <h3>Price</h3>
+            <div class="cart-product-wrapper">
+                <div class="cart-product-body-heading">
+                    <h3>Product</h3>
+                    <h3>Quantity</h3>
+                    <h3>Price</h3>
+                </div>
+                <div class="cart-product-box">
+                    <div class="cart-product-detail">
+                        <div class="cart-product-image">
+                            <img src="image/jacket-2.jpg" alt="">
+                        </div>
+                        <div class="cart-product-name">
+                            <h3>SMOOTH JACKET SERIES - GLITTERY EMERALD WHITE</h3>
+                            <span>M</span>
+                        </div>
+                    </div>
+                    <div class="cart-product-quantity">
+                        <div class='qty-layout'>
+                            <button onclick="decreaseQty()">-</button>
+                            <input type="text" value="1" id="qty"/>
+                            <button onclick="increaseQty()">+</button>
+                        </div>
+                        <div class="cart-product-option">
+                            <button>
+                                <ion-icon name="trash-outline"></ion-icon>
+                            </button>
+                            <button>
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-layout-price">
+                        <span>IDR 190.000</span>
+                    </div>
+                </div>
+                <div class="cart-product-box">
+                    <div class="cart-product-detail">
+                        <div class="cart-product-image">
+                            <img src="image/jacket-2.jpg" alt="">
+                        </div>
+                        <div class="cart-product-name">
+                            <h3>SMOOTH JACKET SERIES - GLITTERY EMERALD WHITE</h3>
+                            <span>M</span>
+                        </div>
+                    </div>
+                    <div class="cart-product-quantity">
+                        <div class='qty-layout'>
+                            <button onclick="decreaseQty()">-</button>
+                            <input type="text" value="1" id="qty"/>
+                            <button onclick="increaseQty()">+</button>
+                        </div>
+                        <div class="cart-product-option">
+                            <button>
+                                <ion-icon name="trash-outline"></ion-icon>
+                            </button>
+                            <button>
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-layout-price">
+                        <span>IDR 190.000</span>
+                    </div>
+                </div>
+                <div class="cart-product-box">
+                    <div class="cart-product-detail">
+                        <div class="cart-product-image">
+                            <img src="image/jacket-2.jpg" alt="">
+                        </div>
+                        <div class="cart-product-name">
+                            <h3>SMOOTH JACKET SERIES - GLITTERY EMERALD WHITE</h3>
+                            <span>M</span>
+                        </div>
+                    </div>
+                    <div class="cart-product-quantity">
+                        <div class='qty-layout'>
+                            <button onclick="decreaseQty()">-</button>
+                            <input type="text" value="1" id="qty"/>
+                            <button onclick="increaseQty()">+</button>
+                        </div>
+                        <div class="cart-product-option">
+                            <button>
+                                <ion-icon name="trash-outline"></ion-icon>
+                            </button>
+                            <button>
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-layout-price">
+                        <span>IDR 190.000</span>
+                    </div>
+                </div>
             </div>
-            <div class="cart-product-box">
-                <div class="cart-product-detail">
-                    <div class="cart-product-image">
-                        <img src="image/jacket-2.jpg" alt="">
-                    </div>
-                    <div class="cart-product-name">
-                        <h3>SMOOTH JACKET SERIES - GLITTERY EMERALD WHITE</h3>
-                        <span>M</span>
-                    </div>
-                </div>
-                <div class="cart-product-quantity">
-                    <div class='qty-layout'>
-                        <button onclick="decreaseQty()">-</button>
-                        <input type="text" value="1" id="qty"/>
-                        <button onclick="increaseQty()">+</button>
-                    </div>
-                    <div class="cart-product-option">
-                        <button>
-                            <ion-icon name="trash-outline"></ion-icon>
-                        </button>
-                        <button>
-                            <ion-icon name="heart-outline"></ion-icon>
-                        </button>
-                    </div>
-                </div>
-                <div class="product-layout-price">
-                    <span>IDR 190.000</span>
-                </div>
-            </div>
-            <div class="cart-product-box">
-                <div class="cart-product-detail">
-                    <div class="cart-product-image">
-                        <img src="image/jacket-2.jpg" alt="">
-                    </div>
-                    <div class="cart-product-name">
-                        <h3>SMOOTH JACKET SERIES - GLITTERY EMERALD WHITE</h3>
-                        <span>M</span>
-                    </div>
-                </div>
-                <div class="cart-product-quantity">
-                    <div class='qty-layout'>
-                        <button onclick="decreaseQty()">-</button>
-                        <p id="qty">1</p>
-                        <button onclick="increaseQty()">+</button>
-                    </div>
-                    <div class="cart-product-option">
-                        <button>
-                            <ion-icon name="trash-outline"></ion-icon>
-                        </button>
-                        <button>
-                            <ion-icon name="heart-outline"></ion-icon>
-                        </button>
-                    </div>
-                </div>
-                <div class="product-layout-price">
-                    <span>IDR 190.000</span>
-                </div>
-            </div>
-            <div class="cart-product-box">
-                <div class="cart-product-detail">
-                    <div class="cart-product-image">
-                        <img src="image/jacket-2.jpg" alt="">
-                    </div>
-                    <div class="cart-product-name">
-                        <h3>SMOOTH JACKET SERIES - GLITTERY EMERALD WHITE</h3>
-                        <span>M</span>
-                    </div>
-                </div>
-                <div class="cart-product-quantity">
-                    <div class='qty-layout'>
-                        <button onclick="decreaseQty()">-</button>
-                        <p id="qty">1</p>
-                        <button onclick="increaseQty()">+</button>
-                    </div>
-                    <div class="cart-product-option">
-                        <button>
-                            <ion-icon name="trash-outline"></ion-icon>
-                        </button>
-                        <button>
-                            <ion-icon name="heart-outline"></ion-icon>
-                        </button>
-                    </div>
-                </div>
-                <div class="product-layout-price">
-                    <span>IDR 190.000</span>
-                </div>
-            </div>
+            
         </div>
         <div class="cart-sidebar-layout">
             <div class="cart-sidebar-content">

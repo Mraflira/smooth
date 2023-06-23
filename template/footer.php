@@ -49,6 +49,30 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
 <script>
+    var relatedProduct = new Swiper(".related-product-layout", {
+      slidesPerView: 2,
+      spaceBetween: 25,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 25,
+        },
+      },
+    });
+  </script>
+<script>
     var swiper = new Swiper(".swiperLogin", {
       navigation: {
         nextEl: ".swiper-button-next",
@@ -66,13 +90,25 @@
 <script>
   var newArrival = new Swiper(".newArrival", {
     slidesPerView: 2,
-      spaceBetween: 68,
-      slidesPerGroup: 1,
+      spaceBetween: 20,
       loop:true,
-      cssMode:true,
     navigation: {
       nextEl: ".swiper-button-next-arrival",
       prevEl: ".swiper-button-prev-arrival",
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 60,
+      },
     },
   });
 </script>
@@ -89,33 +125,54 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      
     });
     
 </script>
 <script>
   var popular = new Swiper(".popularProductSlide", {
-    slidesPerView: 3,
-      spaceBetween: 68,
-      slidesPerGroup: 3,
+    slidesPerView: 2,
+      spaceBetween: 20,
       loop:true,
-      cssMode: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 60,
+      },
+    },
   });
 </script>
 <script>
+    var modifierValue = 3; // Nilai modifier default untuk desktop
+
+    // Mendeteksi perangkat dengan media query
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      modifierValue = 2.7; // Nilai modifier untuk versi mobile
+    }
+    
     var ProductSlider = new Swiper('.tranding-slider', {
       effect: 'coverflow',
       centeredSlides: true,
       loop:true,
+      autoplay:true,
       slidesPerView: 'auto',
       coverflowEffect: {
         rotate: 0,
         stretch: 70,
         depth: 390,
-        modifier: 3.4,
+        modifier:modifierValue,
         slideShadows: false
       },
       navigation: {
@@ -143,16 +200,21 @@
 
     </script>
 
+      <script>
+        function buttonHamburger() {
+          var listMenu = document.getElementById("list-menu");
+
+          listMenu.classList.toggle("active");
+
+          if (listMenu.classList.contains("active")) {
+            menuIcon.setAttribute("name", "close-outline");
+          } else {
+            menuIcon.setAttribute("name", "menu-outline");
+          }
+        }
+      </script>
+
     <script>
-      // var buttonLayout = document.getElementById("size-button");
-      // var btnSize = buttonLayout.getElementsByClassName("btn-size");
-      // for (var i = 0; i < btnSize.length; i++) {
-      //   btnSize[i].addEventListener("click", function() {
-      //   var current = document.getElementsByClassName("active");
-      //   current[0].className = current[0].className.replace(" active", "");
-      //   this.className += " active";
-      //   });
-      // }
       function updateCheckbox(checkboxId) {
         var checkboxes = document.querySelectorAll('.choose-size-box input[type="checkbox"]');
         checkboxes.forEach(function (checkbox) {
@@ -217,12 +279,26 @@
     </script>
     <script>
       var swiperCategoryHome = new Swiper(".swiperCategoryHome", {
-      navigation: {
-        nextEl: ".swiper-button-next-category",
-        prevEl: ".swiper-button-prev-category",
-      },
-      slidesPerView: 3,
-      spaceBetween: 60,
+        navigation: {
+          nextEl: ".swiper-button-next-category",
+          prevEl: ".swiper-button-prev-category",
+        },
+        slidesPerView: 2,
+        spaceBetween: 20,
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 60,
+          },
+        },
       });
     </script>
 </body>

@@ -115,37 +115,26 @@
         </div>
         <div class='size-select'>
             <span>Size :</span>
-            <div class='qty-layout'>
-                <!-- <div id="size-button">
-                    <button class="btn-size" disabled>S</button>
-                    <button class="btn-size active">M</button>
-                    <button class="btn-size">L</button>
-                    <button class="btn-size">XL</button>
-                </div> -->
-                
+            <div class='qty-layout qty-layout-btn'>
                 <div class="size-button">
                     <div class="choose-size-box size-s">
                         <input type="checkbox" id="size-s" onchange="updateCheckbox('size-s')" disabled/>
                         <div class="size-content">
                             <span>S</span>
                         </div>
-                        
                     </div>
-                    
                     <div class="choose-size-box size-m">
                         <input type="checkbox" id="size-m" onchange="updateCheckbox('size-m')"/>
                         <div class="size-content">
                             <span>M</span>
                         </div>
                     </div>
-                    
                     <div class="choose-size-box size-l">
                         <input type="checkbox" id="size-l" onchange="updateCheckbox('size-l')"/>
                         <div class="size-content">
                             <span>L</span>
                         </div>
                     </div>
-                    
                     <div class="choose-size-box size-xl">
                         <input type="checkbox" id="size-xl" onchange="updateCheckbox('size-xl')"/>
                         <div class="size-content">
@@ -153,8 +142,7 @@
                         </div>
                     </div>
                 </div>
-                    
-            <button class='size-guide' onclick="togglePopup()">Size Guide...</button>
+                <button class='size-guide' onclick="togglePopup()">Size Guide...</button>
             </div>
         </div>
         </div>
@@ -189,84 +177,113 @@
         <div class='heading-related-product'>
           <h1>Related Product</h1>
         </div>
-        <div class='related-product-layout'>
-        <a href="#">
-            <div class='related-product-box'>
-              <div class="product-popular">
-                <img src="image/jacket-1.jpg" alt="" />
-              </div>
-              <div class="product-popular-content">
-                <div class="product-popular-desc">
-                    <span><b>Fusion Series</b></span>
-                    <span>Oversized Tees Obeylix White</span>
-                    <span>Tees Collections</span>
+        <div class="swiper related-product-layout">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class='related-product-box'>
+                            <div class="product-popular">
+                                <img src="image/jacket-1.jpg" alt="" />
+                            </div>
+                            <div class="product-popular-content">
+                                <div class="product-popular-desc">
+                                    <span><b>Fusion Series</b></span>
+                                    <span>Oversized Tees Obeylix White</span>
+                                    <span>Tees Collections</span>
+                                </div>
+                                <div class="product-popular-price">
+                                    <span>190.000</span>
+                                    <h5>99.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="product-popular-price">
-                    <span>190.000</span>
-                    <h5>99.000</h5>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class='related-product-box'>
+                            <div class="product-popular">
+                                <img src="image/jacket-1.jpg" alt="" />
+                            </div>
+                            <div class="product-popular-content">
+                                <div class="product-popular-desc">
+                                    <span><b>Fusion Series</b></span>
+                                    <span>Oversized Tees Obeylix White</span>
+                                    <span>Tees Collections</span>
+                                </div>
+                                <div class="product-popular-price">
+                                    <span>190.000</span>
+                                    <h5>99.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-              </div>
-          </div>
-        </a>
-        <a href="#">
-            <div class='related-product-box'>
-              <div class="product-popular">
-                <img src="image/jacket-1.jpg" alt="" />
-              </div>
-              <div class="product-popular-content">
-                <div class="product-popular-desc">
-                    <span><b>Fusion Series</b></span>
-                    <span>Oversized Tees Obeylix White</span>
-                    <span>Tees Collections</span>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class='related-product-box'>
+                        <div class="product-popular">
+                            <img src="image/jacket-1.jpg" alt="" />
+                        </div>
+                        <div class="product-popular-content">
+                            <div class="product-popular-desc">
+                                <span><b>Fusion Series</b></span>
+                                <span>Oversized Tees Obeylix White</span>
+                                <span>Tees Collections</span>
+                            </div>
+                            <div class="product-popular-price">
+                                <span>190.000</span>
+                                <h5>99.000</h5>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
                 </div>
-                <div class="product-popular-price">
-                    <span>190.000</span>
-                    <h5>99.000</h5>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class='related-product-box'>
+                        <div class="product-popular">
+                            <img src="image/jacket-1.jpg" alt="" />
+                        </div>
+                        <div class="product-popular-content">
+                            <div class="product-popular-desc">
+                                <span><b>Fusion Series</b></span>
+                                <span>Oversized Tees Obeylix White</span>
+                                <span>Tees Collections</span>
+                            </div>
+                            <div class="product-popular-price">
+                                <span>190.000</span>
+                                <h5>99.000</h5>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
                 </div>
-              </div>
-          </div>
-        </a>
-        <a href="#">
-            <div class='related-product-box'>
-              <div class="product-popular">
-                <img src="image/jacket-1.jpg" alt="" />
-              </div>
-              <div class="product-popular-content">
-                <div class="product-popular-desc">
-                    <span><b>Fusion Series</b></span>
-                    <span>Oversized Tees Obeylix White</span>
-                    <span>Tees Collections</span>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class='related-product-box'>
+                        <div class="product-popular">
+                            <img src="image/jacket-1.jpg" alt="" />
+                        </div>
+                        <div class="product-popular-content">
+                            <div class="product-popular-desc">
+                                <span><b>Fusion Series</b></span>
+                                <span>Oversized Tees Obeylix White</span>
+                                <span>Tees Collections</span>
+                            </div>
+                            <div class="product-popular-price">
+                                <span>190.000</span>
+                                <h5>99.000</h5>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
                 </div>
-                <div class="product-popular-price">
-                    <span>190.000</span>
-                    <h5>99.000</h5>
-                </div>
-              </div>
-          </div>
-        </a>
-        <a href="#">
-            <div class='related-product-box'>
-              <div class="product-popular">
-                <img src="image/jacket-1.jpg" alt="" />
-              </div>
-              <div class="product-popular-content">
-                <div class="product-popular-desc">
-                    <span><b>Fusion Series</b></span>
-                    <span>Oversized Tees Obeylix White</span>
-                    <span>Tees Collections</span>
-                </div>
-                <div class="product-popular-price">
-                    <span>190.000</span>
-                    <h5>99.000</h5>
-                </div>
-              </div>
-          </div>
-        </a>
-          
-          
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
       </div>
-</div>
+    </div>
 
  
 <?php 

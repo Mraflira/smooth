@@ -4,7 +4,7 @@
 
    <div class="checkout">
         <div class="heading-checkout">
-            <h1>Checkout</h1>
+            <h1>Information</h1>
         </div>
         <div class="form-checkout-layout">
             <div class="form-checkout-contact">
@@ -21,7 +21,7 @@
                     <input type="text" name='negara'>
                 </div>
                 <div class="form-input">
-                    <label for="kota">Kota</label>
+                    <label for="kota">Kota/Kabupaten</label>
                     <input type="text" name='kota'>
                 </div>
                 <div class="form-input-column">
